@@ -1,0 +1,37 @@
+<html>
+  <head>
+	<link rel="stylesheet" href="style.css"></link>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+<body background="pup_in_lavender.jpg">
+<form id="RegForm">
+    <div id="errorBlock"><!--Displays error message block if there are invalid inputs-->
+        ⚠There are items that require your attention
+    </div>
+    
+	<table cellspacing="25">
+		<tr>
+			<td>
+				<!--&emsp; is added for better layout-->
+				<p id="formFont">Username:<br>
+				<input type="textbox" placeholder="Enter your name" id="userName" size="27" name="userName">
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+				<i id="checkUsername"></i><br><!--Username error message-->
+				
+				Email:<br>
+				<input type="text" id="email"><br>
+				<i id="checkEmail"></i><br><!--Email error message-->
+				
+				Password:<br>
+				<input type="password" id="password"><br>
+				<i id="checkPassword"></i><!--Password error message-->
+				<br><br><br><br><br><br><br>
+			</td>
+		</tr>
+	</table>
+	<input id="submit" type="submit" value="Submit"/>
+	<script src="FormValidation.js"></script>
+</form>
+</body>	
+</html>
